@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href ="./hp.ico" type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../nav.css">
+    <link rel="stylesheet" type="text/css" href="./film.css">
+    <title>Harry Potter</title>
+</head>
+<body>
+    <header>
+        <div class="nav" >
+        <ul>
+            <li class="home"><a href="../Home/home.html">Home</a></li>
+            <li class="films"><a class="active" href="#">Films</a></li>
+            <li class="tutorials"><a href="../Object/object.html">Objects</a></li>
+            <li class="news"><a href="#">About</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+        </ul>
+        </div>
+    </header>
+    <div class="player" >
+        <ul id="film-list" >
+            <li class="lidropdown">
+                <a href="javascript:void(0)" class="dropbtn">FILMS</a>
+                <div class="dropdown-content">
+                    <a href="#" id="sr1" >Harry Potter and the Philosopher's Stone</a>
+                    <a href="#" id="sr2" >Harry Potter and the Chamber of Secrets</a>
+                    <a href="#" id="sr3" >Harry Potter and the Prisoner of Azkaban</a>
+                    <a href="#" id="sr4" >Harry Potter and the Goblet of Fire</a>
+                    <a href="#" id="sr5" >Harry Potter and the Order of the Phoenix</a>
+                    <a href="#" id="sr6" >Harry Potter and the Half-Blood Prince</a>
+                    <a href="#" id="sr7" >Harry Potter and the Deathly Hallows: Part 1</a>
+                    <a href="#" id="sr8" >Harry Potter and the Deathly Hallows: Part 2</a>
+                </div>
+            </li>  
+        </ul> 
+        <video id="video-player"
+                src="" 
+                poster="../../Home/hp.ico">
+        </video>
+        <div id = "BTNS" > 
+            <div id="speaker"></div>
+            <div id="play-pause"></div>  
+            <div id="fscreen"></div>                      
+        </div>               
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./link.js" ></script>
+    <script src="./film.js" ></script>
+</body>
+</html>

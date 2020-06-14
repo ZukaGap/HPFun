@@ -1,0 +1,106 @@
+body {
+    background-color: #2b2e4a;
+}
+
+#Introduction {
+    max-width: 100%;
+    min-width: 55%;
+    max-height: 300px;
+    min-height: 150px;
+    font-size: 25px;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* scroll bar style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2b2e4a;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #c72a4a;
+    border-radius: 5px;
+}
+
+.text {
+    width: 75%;
+    margin: 100px auto;
+}
+
+#Introduction::selection {
+    color: #996e00;
+    background: transparent;
+}
+
+.character {
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 75px;
+    margin: 50px 0 20px 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+h2,h4 {
+    background-color: #f5d020;
+    background-image: linear-gradient(0deg, #f5d020 0%, #996e00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2::selection,
+h4::selection {
+    background: transparent;
+}
+
+h4 {
+    text-align: center;
+    font-size: 55px;
+    margin: 10px 0 20px 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+table {
+    margin: auto;
+}
+
+tr td {
+    border: 2px solid black;
+    background-color: #005566;
+}
+
+.character-name{
+    margin: 0 0 0 30px;
+    padding: 0;
+}
+
+.character-name:hover{
+    color: #996e00;
+    cursor: pointer;
+}
+
+img {
+    width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    tr td {
+        display: grid;
+        grid-template-columns: auto;
+    }   
+
+    td {
+        margin: 15px 0;
+    }
+}

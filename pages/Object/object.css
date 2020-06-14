@@ -1,0 +1,64 @@
+body {
+  background-color: #2b2e4a;
+}
+
+table {
+    margin: 100px auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    border-radius: 5px;
+    background-color:#903749;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+    width: 300px;
+    height: 250px;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  .card-text {
+      overflow: scroll;
+      max-height: 100px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ad5e96;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #53354a;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #53354a;
+  }
+
+
+@media screen and (max-width: 600px) {
+  tr td {
+      display: grid;
+      grid-template-columns: auto;
+  }   
+
+  td {
+      margin: 15px 0;
+  }
+}
