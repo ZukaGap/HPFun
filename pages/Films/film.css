@@ -120,4 +120,8 @@ body,html {
     .player {
         width: 100%;
     }
+
+    .dropdown-content {
+        margin: 15px 0;
+    }
 }
