@@ -101,16 +101,16 @@ body,html {
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-    background: #2b2e4a;
+    background: #ad5e96;
     border-radius: 5px;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #c72a4a;
+    background: #53354a;
     border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #53354a;
 }
 
 /* scroll bar style end */
