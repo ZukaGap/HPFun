@@ -96,32 +96,30 @@ body,html {
     display: block;
 }
 
-/* scroll bar style */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #ad5e96;
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb {
-    background: #53354a;
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #53354a;
-}
-
-/* scroll bar style end */
-
-
 @media screen and (max-width: 900px) {
     .player {
         width: 100%;
+        display: block;
+    }
+
+    .lidropdown {
+        text-align: center;
     }
 
     .dropdown-content {
         margin: 15px 0;
     }
+
+    #film-list {
+        margin: 40px auto 0;
+        width: 50px;
+    }
+
+    #video-player {
+        height: 150px;
+    }
+    .dropdown-content {
+        margin: 15px -120px;
+        width: 300px;
+    }  
 }

@@ -33,32 +33,24 @@ table {
       max-height: 100px;
       overflow-y: scroll;
       overflow-x: hidden;
+      padding-right: 15px;
   }
 
-  ::-webkit-scrollbar {
-    width: 10px;
+  h4 {
+    text-align: center;
   }
 
-  ::-webkit-scrollbar-track {
-    background: #ad5e96;
-    border-radius: 5px;
+  td {
+    padding:15px;
   }
-  ::-webkit-scrollbar-thumb {
-    background: #53354a;
-    border-radius: 5px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #53354a;
-  }
-
 
 @media screen and (max-width: 600px) {
+  table {
+    margin: 40px auto;
+  }
+
   tr td {
       display: grid;
       grid-template-columns: auto;
   }   
-
-  td {
-      margin: 15px 0;
-  }
 }

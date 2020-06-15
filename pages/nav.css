@@ -53,3 +53,20 @@ body {
     margin-right: -4px;
     }    
 }
+
+/* scroll bar style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ad5e96;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #53354a;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #53354a;
+} 
