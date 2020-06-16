@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: #ccc;
 }
  
 .nav ul {
@@ -24,6 +23,12 @@ body {
     color: #fff;
     display: block;
     transition: .3s background-color;
+}
+
+.news a {
+    background-color: #53354a;
+    color: rgb(194, 194, 194);
+    cursor: not-allowed;
 }
 
 .nav a:hover {
