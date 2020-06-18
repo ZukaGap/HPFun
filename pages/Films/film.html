@@ -23,21 +23,25 @@
         </div>
     </header>
     <div class="player" >
-        <ul id="film-list" >
-            <li class="lidropdown">
-                <a href="javascript:void(0)" class="dropbtn">FILMS</a>
-                <div class="dropdown-content">
-                    <a href="#" id="sr1" >Harry Potter and the Philosopher's Stone</a>
-                    <a href="#" id="sr2" >Harry Potter and the Chamber of Secrets</a>
-                    <a href="#" id="sr3" >Harry Potter and the Prisoner of Azkaban</a>
-                    <a href="#" id="sr4" >Harry Potter and the Goblet of Fire</a>
-                    <a href="#" id="sr5" >Harry Potter and the Order of the Phoenix</a>
-                    <a href="#" id="sr6" >Harry Potter and the Half-Blood Prince</a>
-                    <a href="#" id="sr7" >Harry Potter and the Deathly Hallows: Part 1</a>
-                    <a href="#" id="sr8" >Harry Potter and the Deathly Hallows: Part 2</a>
-                </div>
-            </li>  
-        </ul> 
+        <div class="container">
+            <div class="dropdown">
+            <div class="dropdown__skeleton">
+                <label>Films: harry potter and</label>
+                <div class="dropdown__selected dropdown__option"><span>the Philosopher's Stone</span></div>
+                <div class="dropdown__arrow"></div>
+            </div>    
+            <div class="dropdown__options">
+                <div class="dropdown__option"><span id="sr1" >the Philosopher's Stone</span></div>      
+                <div class="dropdown__option"><span id="sr2" >the Chamber of Secrets</span></div>      
+                <div class="dropdown__option"><span id="sr3" >the Prisoner of Azkaban</span></div>      
+                <div class="dropdown__option"><span id="sr4" >the Goblet of Fire</span></div>      
+                <div class="dropdown__option"><span id="sr5" >the Order of the Phoenix</span></div>
+                <div class="dropdown__option"><span id="sr6" >the Half-Blood Prince</span></div>
+                <div class="dropdown__option"><span id="sr7" >the Deathly Hallows: Part 1</span></div>
+                <div class="dropdown__option"><span id="sr8" >the Deathly Hallows: Part 2</span></div>
+            </div>
+            </div>
+        </div>
         <video id="video-player"
                 src="https://api.adjaranet.com/api/v1/movies/5447/files/847137?source=adjaranet" 
                 poster="./SVG/hogwarts.svg"
@@ -52,5 +56,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./link.js" ></script>
     <script src="./film.js" ></script>
+    <script src="./dropdown.js" ></script>
 </body>
 </html>
