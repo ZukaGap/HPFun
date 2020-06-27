@@ -9,22 +9,10 @@ var series = [
     '39498/files/847130?source=adjaranet'
 ]
 
-$(document).ready(function(){ 
-    
+$(document).ready(function(){
    var btnClick = function(e){
-        $('#sr1').removeClass("active");
-        $('#sr2').removeClass("active");
-        $('#sr3').removeClass("active");
-        $('#sr4').removeClass("active");
-        $('#sr5').removeClass("active");
-        $('#sr6').removeClass("active");
-        $('#sr7').removeClass("active");
-        $('#sr8').removeClass("active");
-        
         $('#video-player').attr('src','https://api.adjaranet.com/api/v1/movies/' + series[e.currentTarget.id.slice(2)-1]);
         $( "#play-pause" ).load( "./SVG/play.svg" );  
-        let cl = "#" + e.currentTarget.id;
-        $(cl).addClass("active");
    }
 
     $('#sr1').on({'click': btnClick});
