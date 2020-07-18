@@ -25,12 +25,6 @@ body {
     transition: .3s background-color;
 }
 
-.news a {
-    background-color: #53354a;
-    color: rgb(194, 194, 194);
-    cursor: not-allowed;
-}
-
 .nav a:hover {
     background-color: #53354a;
 }
@@ -40,8 +34,7 @@ body {
 }
   
 .nav a.active {
-    background-color: #fff;
-    color: #444;
+    background-color: #2b2e4a;
     cursor: default;
 }
 

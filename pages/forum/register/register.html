@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="../login/login_signup.css" />
+        <link rel="stylesheet" href="../../nav.css" />
+        <link rel = "icon" href ="../../Home/hp.ico" type = "image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" />
+	</head>
+	<body>
+        <header>
+            <div class="nav" >
+            <ul>
+                <li class="home"><a href="../../Home/home.html">Home</a></li>
+                <li class="films"><a href="../../Films/film.html">Films</a></li>
+                <li class="tutorials"><a href="../../Object/object.html">Objects</a></li>
+                <li class="forum"><a class="active" href="#" >Forum</a></li>
+                <li class="contact"><a href="../../contact/contact.html">Contact</a></li>
+            </ul>
+            </div>
+        </header> 
+		<div class="register">
+			<h1>Register</h1>
+			<form action="register.php" method="post" autocomplete="off">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<label for="email">
+					<i class="fas fa-envelope"></i>
+				</label>
+                <input type="email" name="email" placeholder="Email" id="email" required>
+                <a href="../login/login.php" id="back" >Back</a>
+                <input type="submit" value="Register">
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;   
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+}
+body {
+    background-color: #2b2e4a;
+    margin: 0;
+}
+.logout {
+    width: 150px;
+    margin: 20px auto;
+}
+
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #903749;
+    color: #ffffff;
+}
+
+.logout form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #903749;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+    font-size: 20px;
+}
+
+.logout form input[type="submit"]:hover {
+    background-color: #53354a;
+    transition: background-color 0.2s;
+}   
+
+.users {
+    width: 90%;
+    margin: auto;
+}
+
+table{
+    width:100%;
+    table-layout: fixed;
+}
+
+
+th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+.delete {
+    color: #fff;
+    border: none;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.delete:hover {
+    color: orange;
+}
+
+thead tr th {
+    color: #903749;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.hoverTable tr:hover {
+    background-color: #903749;
+}
+
+.status {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
+body {
+    background-color: #2b2e4a;
+}
+
+.addComment {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.addComment #txtinput {
+    width: 700px;
+    height: 40px;
+    margin: 20px 0;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.addComment #send {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.addComment #send:hover {
+    background-color: #cc2b2b;
+}
+
+.addComment #send:active {
+    background-color: rgb(47, 163, 47);
+}
+
+.user {
+    color: #000;
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+.content {
+    width: 80%;
+    height: 100%;
+    margin: 15px auto;
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+p {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 5px;
+    background-color: #903749;
+    border-radius: 5px;
+    color: #cfcece;
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment p{
+    max-height: 150px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sec-center {
+    display: block;
+}
+
+i.fas.fa-trash {
+    color: #cfcece;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .addComment #txtinput {
+        width: 50vw;
+    }
+    
+    .addComment #send {
+        width: 60px;
+    }
+
+    .comment p{
+        max-height: 100px;
+    }
+}
